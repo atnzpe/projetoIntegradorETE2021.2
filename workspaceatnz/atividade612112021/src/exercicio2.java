@@ -7,19 +7,23 @@
  *
  * @author ALUNO
  */
-
 import java.util.Scanner;
 
 public class exercicio2 {
-    public static void main(String [] args){
-        Scanner input = new Scanner (System.in);
-        
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double salarioTotal = 0;
         int nFuncionarios = 4;
         int cont = 0;
-        while(cont < nFuncionarios){
+        while (cont < nFuncionarios) {
             System.out.println("Digite salario");
-            double salario = 
+            double salario = input.nextDouble();
+            salarioTotal += salario;
+            cont++;
         }
+        double media = salarioTotal / nFuncionarios;
+        System.out.println("A média salarial para " + nFuncionarios + " funcionário(s) é " + "R$ " + media);
     }
-     
+
 }
