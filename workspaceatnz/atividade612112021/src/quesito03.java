@@ -19,6 +19,6 @@ public class quesito03 {
         Scanner in = new Scanner(System.in);
         int cont = 0;
         double alturaLarguraParede[] = new double[2];
-
+        double alturaLarguraAzulejo[] = new double[2];
     }
 }
