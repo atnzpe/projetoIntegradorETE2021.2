@@ -1,0 +1,24 @@
+/*
+ * Uma parede em formato retangular, 
+ * cuja altura é hp (altura da parede) e a largura lp (largura da parede) precisa ser coberta por azulejos também retangulares. 
+ * O azulejo retangular tem dimensões ha (altura do azulejo) e la (largura do azulejo). 
+ * Escreva um programa que leia as quatro medidas hp, lp, ha e la, 
+ * calcule e imprima quanto azulejos com as medidas dadas são necessários para cobrir a parede dada.
+ */
+
+/**
+ *
+ * @author gleyson atanazio
+ */
+import java.util.Scanner;
+
+public class quesito03 {
+
+    public static void main(String[] args) {
+        System.out.println("-Cálculo Azulejos para uma Parede -");
+        Scanner in = new Scanner(System.in);
+        int cont = 0;
+        double alturaLarguraParede[] = new double[2];
+
+    }
+}
