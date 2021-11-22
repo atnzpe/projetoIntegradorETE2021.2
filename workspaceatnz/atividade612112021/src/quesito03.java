@@ -18,7 +18,7 @@ public class quesito03 {
         System.out.println("-Cálculo Azulejos para uma Parede -");
         Scanner in = new Scanner(System.in);
 
-        int cont = 0;
+        int cont = 0, i = 1;
         double alturaLarguraParede[] = new double[2];
         double alturaLarguraAzulejo[] = new double[2];
 
@@ -29,6 +29,7 @@ public class quesito03 {
             cont++;
             i++;
         }
+        i = 1;
         cont = 0;
         while (cont < 2) {
             System.out.println("<-- Digite o Tamanho do Azulejo -->");
@@ -38,6 +39,6 @@ public class quesito03 {
             i++;
         }
         double qtdAzulejos = (alturaLarguraParede[0] * alturaLarguraParede[1]) / (alturaLarguraAzulejo[0] * alturaLarguraAzulejo[1]);
-        System.out.println("A quantidade necessária de azulejos é de:  "+qtdAzulejos);
+        System.out.println("A quantidade necessária de azulejos é de:  " + qtdAzulejos);
     }
 }
