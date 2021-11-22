@@ -21,10 +21,13 @@ public class quesito03 {
         int cont = 0, i = 1;
         double alturaLarguraParede[] = new double[2];
         double alturaLarguraAzulejo[] = new double[2];
-
+        System.out.println("<-- Digite o tamanho da sua parede  -->");
+        System.out.println("Exemplo: Se sua parede  é de base 3,00 mt e Altura 2,20 mt, ");
+         System.out.println("Você deverá digitar na base  3,00, e em seguida, 2,20 para altura");
+        System.out.println("=====================================");
         while (cont < 2) {
             if (i == 1) {
-                System.out.println("Digite  primeiro o tamanho da base da Parede (Exemplo: 3,7): ");
+                System.out.println("Digite  primeiro, o tamanho da base de sua Parede (Exemplo: 3,00): ");
                 alturaLarguraParede[cont] = in.nextDouble();
             } else {
                 System.out.println("Agora digite a altura da parede que será revestida (Exemplo: 2,20): ");
@@ -36,10 +39,14 @@ public class quesito03 {
         }
         i = 1;
         cont = 0;
+        System.out.println("<-- Digite Agora o Tamanho do Azulejo -->");
+        System.out.println("Exemplo: Azulejo é de 60x60, Voce deve digitar no lado A 0,60, em seguida, 0,60 para o Lado B");
+
+        System.out.println("=====================================");
         while (cont < 2) {
             System.out.println("<-- Digite Agora o Tamanho do Azulejo -->");
             System.out.println("Exemplo: Azulejo é de 60x60, Voce deve digitar no lado A 0,60, em seguida, 0,60 para o Lado B");
-            System.out.println("=====================================");
+
             if (i == 1) {
                 System.out.println("Digite o Lado A (Exemplo 0,60) : ");
                 alturaLarguraAzulejo[cont] = in.nextDouble();
@@ -47,11 +54,11 @@ public class quesito03 {
                 System.out.println("Agora digite o Lado B do seu azulejo: ");
                 alturaLarguraAzulejo[cont] = in.nextDouble();
             }
-            
+
             cont++;
             i++;
         }
         double qtdAzulejos = (alturaLarguraParede[0] * alturaLarguraParede[1]) / (alturaLarguraAzulejo[0] * alturaLarguraAzulejo[1]);
-        System.out.println("A quantidade necessária de azulejos é de:  " + qtdAzulejos);
+        System.out.printf(" A quantidade necessária de azulejos é de:  %.2f", qtdAzulejos);
     }
 }
