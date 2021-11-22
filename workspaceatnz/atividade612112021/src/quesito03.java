@@ -23,18 +23,31 @@ public class quesito03 {
         double alturaLarguraAzulejo[] = new double[2];
 
         while (cont < 2) {
-            System.out.println("<-- Digite o Tamanho da Parede -->%n%n");
-            System.out.println("Digite  " + i + "º" + " lado: ");
-            alturaLarguraParede[cont] = in.nextDouble();
+            if (i == 1) {
+                System.out.println("Digite  primeiro o tamanho da base da Parede (Exemplo: 3,7): ");
+                alturaLarguraParede[cont] = in.nextDouble();
+            } else {
+                System.out.println("Agora digite a altura da parede que será revestida (Exemplo: 2,20): ");
+                alturaLarguraParede[cont] = in.nextDouble();
+            }
+
             cont++;
             i++;
         }
         i = 1;
         cont = 0;
         while (cont < 2) {
-            System.out.println("<-- Digite o Tamanho do Azulejo -->");
-            System.out.println("Digite  " + i + "º" + " lado: ");
-            alturaLarguraAzulejo[cont] = in.nextDouble();
+            System.out.println("<-- Digite Agora o Tamanho do Azulejo -->");
+            System.out.println("Exemplo: Azulejo é de 60x60, Voce deve digitar no lado A 0,60, em seguida, 0,60 para o Lado B");
+            System.out.println("=====================================");
+            if (i == 1) {
+                System.out.println("Digite o Lado A (Exemplo 0,60) : ");
+                alturaLarguraAzulejo[cont] = in.nextDouble();
+            } else {
+                System.out.println("Agora digite o Lado B do seu azulejo: ");
+                alturaLarguraAzulejo[cont] = in.nextDouble();
+            }
+            
             cont++;
             i++;
         }
