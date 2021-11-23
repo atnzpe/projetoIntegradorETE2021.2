@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <title>Controle Financeiro</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="./assets/logo.svg" alt="logo marca da empresa tamanho 300X100 pixels" gi>
+        <h1 id="logo">Controle Financeiro</h1>
+    </header>
+
+    <main class="container">
+        <section id="balance">
+            <h2 class="sr-only">Balanço</h2>
+        </section>
+        <div class="card">
+            <h3>
+                <spam>
+                    Entradas
+                </spam>
+                <img src="./assets/income.svg" alt="Imagem que representa entradas / receitas">
+            </h3>
+            <p>R$ 5.000,00</p>
+        </div>
+        <div class="card">
+            <h3>
+                <spam>
+                    Saídas
+                </spam>
+                <img src="./assets/expense.svg" alt="Imagem que representa saídas / despesas">
+            </h3>
+            <p>R$ 2.000,00</p>
+        </div>
+        <div class="card total">
+            <h3>
+                <spam>
+                    Total
+                </spam>
+                <img src="./assets/total.svg" alt="Imagem que representa total">
+            </h3>
+            <p>R$ 3.000,00</p>
+        </div>
+     
+         <section id="transaction">
+            <h2 class="sr-only">Transações</h2>
+
+            <a href="#" class="button new">+ Nova Transação</a>
+
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                        <th>Data do Título</th>
+                        <th>Vencimento</th>
+                        <th>Baixado ?</th>
+                        <th>Conciliado? </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="description">Celpe</td>
+                        <!--credor-->
+                        <td class="despesa">- R$ 500,00</td>
+                        <!--valor-->
+                        <td class="date">19/01/2021</td>
+                        <!--data do título-->
+                        <td class="vencimento">19/02/2021</td> <!-- vencimento -->
+                        <td class="baixa">Sim</td>
+                        <!--mostra se foi baixado-->
+                        <td class="concilia">Não</td>
+                        <!--mostra se foi conciliado-->
+                        <td><img src="./assets/minus.svg" alt="Remover Transação"></td>
+                        <!--botão remever transação-->
+                    </tr>
+
+                    <tr>
+                        <td class="description">Salário</td>
+                        <!--credor-->
+                        <td class="receita"> R$ 2.500,00</td>
+                        <!--valor-->
+                        <td class="date">19/01/2021</td>
+                        <!--data do título-->
+                        <td class="vencimento">19/02/2021</td> <!-- vencimento -->
+                        <td class="baixa">Sim</td>
+                        <!--mostra se foi baixado-->
+                        <td class="concilia">Não</td>
+                        <!--mostra se foi conciliado-->
+                        <td><img src="./assets/minus.svg" alt="Remover Transação"></td>
+                        <!--botão remever transação-->
+                    </tr>
+                    </tr>
+
+                    <tr>
+                        <td class="description">Internet</td>
+                        <!--credor-->
+                        <td class="despesa">- R$ 79,90</td>
+                        <!--valor-->
+                        <td class="date">01/02/2021</td>
+                        <!--data do título-->
+                        <td class="vencimento">01/03/2021</td> <!-- vencimento -->
+                        <td class="baixa">Sim</td>
+                        <!--mostra se foi baixado-->
+                        <td class="concilia">Não</td>
+                        <!--mostra se foi conciliado-->
+                        <td><img src="./assets/minus.svg" alt="Remover Transação"></td>
+                        <!--botão remever transação-->
+                    </tr>
+
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>Controle Financeiro</p>
+    </footer>
+</body>
+
+</html>
