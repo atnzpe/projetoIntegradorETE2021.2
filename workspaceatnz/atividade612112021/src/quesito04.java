@@ -11,22 +11,23 @@
 import java.util.Scanner;
 
 public class quesito04 {
-    public static void main(String[] args){
-    Scanner input = new Scanner(System.in);
-    double raioEaltura [] = new double [3];
-   int i=0; 
-while(i< 2){
-    switch(i){
-        case(0):
-            System.out.println("Digite o Valor do Raio: ");
-            raioEaltura[i] = input.nextDouble();
-        case(1):
-            System.out.println("Digite o Valor do Ângulo: ");
-            raioEaltura[i] = input.nextDouble();
-    }
-    i++;
-            
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double raioEaltura[] = new double[3];
+        int i = 0;
+        while (i < 2) {
+            switch (i) {
+                case (0):
+                    System.out.println("Digite o Valor do Raio: ");
+                    raioEaltura[i] = input.nextDouble();
+                case (1):
+                    System.out.println("Digite o Valor do Ângulo: ");
+                    raioEaltura[i] = input.nextDouble();
+            }
+            i++;
+        }
+        double V=3.14159*raioEaltura[0]*raioEaltura[0]*raioEaltura[1];
+        System.out.printf("O volume da lata é de %.2df", V);
     }
 }
-    }
-
