@@ -12,5 +12,6 @@ import java.util.Scanner;
 
 public class quesito04 {
     Scanner input = new Scanner(System.in);
-    
+    double raioEaltura [] = new double [3];
+    for()
 }
