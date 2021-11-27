@@ -21,13 +21,15 @@ public class quesito04 {
                 case (0):
                     System.out.println("Digite o Valor do Raio: ");
                     raioEaltura[i] = input.nextDouble();
+                    break;
                 case (1):
-                    System.out.println("Digite o Valor do Ângulo: ");
+                    System.out.println("Digite o Valor da Altura: ");
                     raioEaltura[i] = input.nextDouble();
+                    break;
             }
             i++;
         }
         double V=3.14159*raioEaltura[0]*raioEaltura[0]*raioEaltura[1];
-        System.out.printf("O volume da lata é de %.2df", V);
+        System.out.printf("O volume da lata de óleo é de %.2f ", V,"ml. ");
     }
 }
